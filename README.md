@@ -1,12 +1,12 @@
-# 🚀 Desafio de Estágio - RPA com Python
+# Desafio de Estágio - RPA com Python
 
-## 📚 Descrição do Projeto
+## Descrição do Projeto
 Este projeto tem como objetivo realizar web scraping no site 
 [https://quotes.toscrape.com/js-delayed/](https://quotes.toscrape.com/js-delayed/), 
 processar os dados coletados e enviar um relatório por e-mail contendo 
 um resumo das informações e o arquivo CSV em anexo.
 
-## 🏗 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```bash
 rpa_quotes
@@ -21,22 +21,22 @@ rpa_quotes
 └── quotes.csv            # Arquivo CSV gerado (opcional no Git)
 ```
 
-## ⚙ Funcionalidades
-- ✅ Web scraping de *todas as 10 páginas* do site.
-- ✅ Extração de:
+## Funcionalidades
+- Web scraping de *todas as 10 páginas* do site.
+- Extração de:
   - Citações
   - Autores
   - Tags
-- ✅ Salvamento dos dados em um arquivo CSV (quotes.csv).
-- ✅ Processamento dos dados:
+- Salvamento dos dados em um arquivo CSV (quotes.csv).
+- Processamento dos dados:
   - Quantidade total de citações.
   - Autor mais recorrente.
   - Tag mais utilizada.
-- ✅ Envio de relatório por e-mail com:
-  - ✔ CSV como anexo.
-  - ✔ Resumo dos dados no corpo do e-mail.
+- Envio de relatório por e-mail com:
+  - CSV como anexo.
+  - Resumo dos dados no corpo do e-mail.
 
-  ## 🔥 Tecnologias e Bibliotecas Usadas
+  ## Tecnologias e Bibliotecas Usadas
 - Python
 - Selenium
 - Pandas
@@ -44,14 +44,14 @@ rpa_quotes
 - smtplib + email (biblioteca nativa para e-mails)
 - python-dotenv (para segurança das credenciais)
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
-### 🔧 Pré-requisitos
+### Pré-requisitos
 - Python instalado na máquina
 - Conta de e-mail com *App Password*
 - Git (opcional, recomendado)
 
-### ⿡ Clone o repositório
+### Clone o repositório
 ```bash
 git clone https://github.com/seu-usuario/rpa_quotes.git
 cd rpa_quotes
@@ -75,7 +75,7 @@ Gere em: https://myaccount.google.com/apppasswords
 ```bash
 python main.py
 ```
-✅ O programa irá:
+O programa irá:
 
 Fazer scraping de todas as 10 páginas.
 
