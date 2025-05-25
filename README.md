@@ -8,7 +8,8 @@ um resumo das informações e o arquivo CSV em anexo.
 
 ## 🏗 Estrutura do Projeto
 
-rpa_quotes/
+```bash
+rpa_quotes
 ├── .env                  # Variáveis sensíveis (NÃO subir para o GitHub)
 ├── .gitignore            # Arquivos que o Git deve ignorar
 ├── main.py               # Script principal que executa tudo
@@ -18,6 +19,7 @@ rpa_quotes/
 ├── requirements.txt      # Dependências do projeto
 ├── README.md             # Documentação do projeto
 └── quotes.csv            # Arquivo CSV gerado (opcional no Git)
+```
 
 ## ⚙ Funcionalidades
 - ✅ Web scraping de *todas as 10 páginas* do site.
@@ -54,3 +56,33 @@ rpa_quotes/
 git clone https://github.com/seu-usuario/rpa_quotes.git
 cd rpa_quotes
 ```
+
+### Instale as dependências 
+```bash
+pip install -r requirements.txt
+```
+
+### Configure o arquivo .env
+crie um arquivo .env na raiz do projeto, com esse conteúdo:
+```bash
+EMAIL=seuemail@gmail.com
+PASSWORD=sua_app_password
+```
+⚠ A senha precisa ser uma App Password, não sua senha normal.
+Gere em: https://myaccount.google.com/apppasswords 
+
+### Execute o projeto
+```bash
+python main.py
+```
+✅ O programa irá:
+
+Fazer scraping de todas as 10 páginas.
+
+Processar o arquivo CSV.
+
+Enviar um e-mail com o CSV e o resumo dos dados.
+
+## Referencia e creditos
+- 🔗 Site: https://quotes.toscrape.com/js-delayed/
+- 📺 Tutorial de apoio: https://www.youtube.com/watch?v=71ECrViH_Ng&t=184s
